@@ -2,77 +2,77 @@ package org.d11.rest.api.model;
 
 public class PlayerMatchStatDTO extends PlayerStatDTO {
 
-	private String playedPosition;
-	private int lineup;
-	private int substitutionOnTime;
-	private int substitutionOffTime;
-	private int yellowCardTime;
-	private int redCardTime;
-	private boolean manOfTheMatch;
-	private boolean sharedManOfTheMatch;
-			
-	public String getPlayedPosition() {
-		return playedPosition;
-	}
+    private String playedPosition;
+    private int lineup;
+    private int substitutionOnTime;
+    private int substitutionOffTime;
+    private int yellowCardTime;
+    private int redCardTime;
+    private boolean manOfTheMatch;
+    private boolean sharedManOfTheMatch;
 
-	public void setPlayedPosition(String playedPosition) {
-		this.playedPosition = playedPosition;
-	}
+    public String getPlayedPosition() {
+        return playedPosition;
+    }
 
-	public int getLineup() {
-		return lineup;
-	}
+    public void setPlayedPosition(String playedPosition) {
+        this.playedPosition = playedPosition;
+    }
 
-	public void setLineup(int lineup) {
-		this.lineup = lineup;
-	}
+    public int getLineup() {
+        return lineup;
+    }
 
-	public int getSubstitutionOnTime() {
-		return substitutionOnTime;
-	}
+    public void setLineup(int lineup) {
+        this.lineup = lineup;
+    }
 
-	public void setSubstitutionOnTime(int substitutionOnTime) {
-		this.substitutionOnTime = substitutionOnTime;
-	}
+    public int getSubstitutionOnTime() {
+        return substitutionOnTime;
+    }
 
-	public int getSubstitutionOffTime() {
-		return substitutionOffTime;
-	}
+    public void setSubstitutionOnTime(int substitutionOnTime) {
+        this.substitutionOnTime = substitutionOnTime;
+    }
 
-	public void setSubstitutionOffTime(int substitutionOffTime) {
-		this.substitutionOffTime = substitutionOffTime;
-	}
+    public int getSubstitutionOffTime() {
+        return substitutionOffTime;
+    }
 
-	public int getYellowCardTime() {
-		return yellowCardTime;
-	}
+    public void setSubstitutionOffTime(int substitutionOffTime) {
+        this.substitutionOffTime = substitutionOffTime;
+    }
 
-	public void setYellowCardTime(int yellowCardTime) {
-		this.yellowCardTime = yellowCardTime;
-	}
+    public int getYellowCardTime() {
+        return yellowCardTime;
+    }
 
-	public int getRedCardTime() {
-		return redCardTime;
-	}
+    public void setYellowCardTime(int yellowCardTime) {
+        this.yellowCardTime = yellowCardTime;
+    }
 
-	public void setRedCardTime(int redCardTime) {
-		this.redCardTime = redCardTime;
-	}
+    public int getRedCardTime() {
+        return redCardTime;
+    }
 
-	public boolean isManOfTheMatch() {
-		return manOfTheMatch;
-	}
+    public void setRedCardTime(int redCardTime) {
+        this.redCardTime = redCardTime;
+    }
 
-	public void setManOfTheMatch(boolean manOfTheMatch) {
-		this.manOfTheMatch = manOfTheMatch;
-	}
+    public boolean isManOfTheMatch() {
+        return manOfTheMatch;
+    }
 
-	public boolean isSharedManOfTheMatch() {
-		return sharedManOfTheMatch;
-	}
+    public void setManOfTheMatch(boolean manOfTheMatch) {
+        this.manOfTheMatch = manOfTheMatch;
+    }
 
-	public void setSharedManOfTheMatch(boolean sharedManOfTheMatch) {
-		this.sharedManOfTheMatch = sharedManOfTheMatch;
-	}
-	
+    public boolean isSharedManOfTheMatch() {
+        return sharedManOfTheMatch;
+    }
+
+    public void setSharedManOfTheMatch(boolean sharedManOfTheMatch) {
+        this.sharedManOfTheMatch = sharedManOfTheMatch;
+    }
+
 }

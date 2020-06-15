@@ -2,269 +2,269 @@ package org.d11.rest.api.model;
 
 public class TableStatDTO extends D11RestApiDTO {
 
-	private Integer matchesPlayed;
-	private Integer matchesWon;
-	private Integer matchesDrawn;
-	private Integer matchesLost;
-	private Integer goalsFor;
-	private Integer goalsAgainst;
-	private Integer goalDifference;
-	private Integer points;
-	private Integer ranking;	
-	
-	private Integer homeMatchesPlayed;
-	private Integer homeMatchesWon;
-	private Integer homeMatchesDrawn;
-	private Integer homeMatchesLost;
-	private Integer homeGoalsFor;
-	private Integer homeGoalsAgainst;
-	private Integer homeGoalDifference;
-	private Integer homePoints;
-	private Integer homeRanking;	
+    private Integer matchesPlayed;
+    private Integer matchesWon;
+    private Integer matchesDrawn;
+    private Integer matchesLost;
+    private Integer goalsFor;
+    private Integer goalsAgainst;
+    private Integer goalDifference;
+    private Integer points;
+    private Integer ranking;
 
-	private Integer awayMatchesPlayed;
-	private Integer awayMatchesWon;
-	private Integer awayMatchesDrawn;
-	private Integer awayMatchesLost;
-	private Integer awayGoalsFor;
-	private Integer awayGoalsAgainst;
-	private Integer awayGoalDifference;
-	private Integer awayPoints;
-	private Integer awayRanking;
-	
-	private Integer formPoints;
-	private Integer previousRanking;
+    private Integer homeMatchesPlayed;
+    private Integer homeMatchesWon;
+    private Integer homeMatchesDrawn;
+    private Integer homeMatchesLost;
+    private Integer homeGoalsFor;
+    private Integer homeGoalsAgainst;
+    private Integer homeGoalDifference;
+    private Integer homePoints;
+    private Integer homeRanking;
 
-	public Integer getMatchesPlayed() {
-		return matchesPlayed;
-	}
+    private Integer awayMatchesPlayed;
+    private Integer awayMatchesWon;
+    private Integer awayMatchesDrawn;
+    private Integer awayMatchesLost;
+    private Integer awayGoalsFor;
+    private Integer awayGoalsAgainst;
+    private Integer awayGoalDifference;
+    private Integer awayPoints;
+    private Integer awayRanking;
 
-	public void setMatchesPlayed(Integer matchesPlayed) {
-		this.matchesPlayed = matchesPlayed;
-	}
+    private Integer formPoints;
+    private Integer previousRanking;
 
-	public Integer getMatchesWon() {
-		return matchesWon;
-	}
+    public Integer getMatchesPlayed() {
+        return matchesPlayed;
+    }
 
-	public void setMatchesWon(Integer matchesWon) {
-		this.matchesWon = matchesWon;
-	}
+    public void setMatchesPlayed(Integer matchesPlayed) {
+        this.matchesPlayed = matchesPlayed;
+    }
 
-	public Integer getMatchesDrawn() {
-		return matchesDrawn;
-	}
+    public Integer getMatchesWon() {
+        return matchesWon;
+    }
 
-	public void setMatchesDrawn(Integer matchesDrawn) {
-		this.matchesDrawn = matchesDrawn;
-	}
+    public void setMatchesWon(Integer matchesWon) {
+        this.matchesWon = matchesWon;
+    }
 
-	public Integer getMatchesLost() {
-		return matchesLost;
-	}
+    public Integer getMatchesDrawn() {
+        return matchesDrawn;
+    }
 
-	public void setMatchesLost(Integer matchesLost) {
-		this.matchesLost = matchesLost;
-	}
+    public void setMatchesDrawn(Integer matchesDrawn) {
+        this.matchesDrawn = matchesDrawn;
+    }
 
-	public Integer getGoalsFor() {
-		return goalsFor;
-	}
+    public Integer getMatchesLost() {
+        return matchesLost;
+    }
 
-	public void setGoalsFor(Integer goalsFor) {
-		this.goalsFor = goalsFor;
-	}
+    public void setMatchesLost(Integer matchesLost) {
+        this.matchesLost = matchesLost;
+    }
 
-	public Integer getGoalsAgainst() {
-		return goalsAgainst;
-	}
+    public Integer getGoalsFor() {
+        return goalsFor;
+    }
 
-	public void setGoalsAgainst(Integer goalsAgainst) {
-		this.goalsAgainst = goalsAgainst;
-	}
+    public void setGoalsFor(Integer goalsFor) {
+        this.goalsFor = goalsFor;
+    }
 
-	public Integer getGoalDifference() {
-		return goalDifference;
-	}
+    public Integer getGoalsAgainst() {
+        return goalsAgainst;
+    }
 
-	public void setGoalDifference(Integer goalDifference) {
-		this.goalDifference = goalDifference;
-	}
+    public void setGoalsAgainst(Integer goalsAgainst) {
+        this.goalsAgainst = goalsAgainst;
+    }
 
-	public Integer getPoints() {
-		return points;
-	}
+    public Integer getGoalDifference() {
+        return goalDifference;
+    }
 
-	public void setPoints(Integer points) {
-		this.points = points;
-	}
+    public void setGoalDifference(Integer goalDifference) {
+        this.goalDifference = goalDifference;
+    }
 
-	public Integer getRanking() {
-		return ranking;
-	}
+    public Integer getPoints() {
+        return points;
+    }
 
-	public void setRanking(Integer ranking) {
-		this.ranking = ranking;
-	}
+    public void setPoints(Integer points) {
+        this.points = points;
+    }
 
-	public Integer getHomeMatchesPlayed() {
-		return homeMatchesPlayed;
-	}
+    public Integer getRanking() {
+        return ranking;
+    }
 
-	public void setHomeMatchesPlayed(Integer homeMatchesPlayed) {
-		this.homeMatchesPlayed = homeMatchesPlayed;
-	}
+    public void setRanking(Integer ranking) {
+        this.ranking = ranking;
+    }
 
-	public Integer getHomeMatchesWon() {
-		return homeMatchesWon;
-	}
+    public Integer getHomeMatchesPlayed() {
+        return homeMatchesPlayed;
+    }
 
-	public void setHomeMatchesWon(Integer homeMatchesWon) {
-		this.homeMatchesWon = homeMatchesWon;
-	}
+    public void setHomeMatchesPlayed(Integer homeMatchesPlayed) {
+        this.homeMatchesPlayed = homeMatchesPlayed;
+    }
 
-	public Integer getHomeMatchesDrawn() {
-		return homeMatchesDrawn;
-	}
+    public Integer getHomeMatchesWon() {
+        return homeMatchesWon;
+    }
 
-	public void setHomeMatchesDrawn(Integer homeMatchesDrawn) {
-		this.homeMatchesDrawn = homeMatchesDrawn;
-	}
+    public void setHomeMatchesWon(Integer homeMatchesWon) {
+        this.homeMatchesWon = homeMatchesWon;
+    }
 
-	public Integer getHomeMatchesLost() {
-		return homeMatchesLost;
-	}
+    public Integer getHomeMatchesDrawn() {
+        return homeMatchesDrawn;
+    }
 
-	public void setHomeMatchesLost(Integer homeMatchesLost) {
-		this.homeMatchesLost = homeMatchesLost;
-	}
+    public void setHomeMatchesDrawn(Integer homeMatchesDrawn) {
+        this.homeMatchesDrawn = homeMatchesDrawn;
+    }
 
-	public Integer getHomeGoalsFor() {
-		return homeGoalsFor;
-	}
+    public Integer getHomeMatchesLost() {
+        return homeMatchesLost;
+    }
 
-	public void setHomeGoalsFor(Integer homeGoalsFor) {
-		this.homeGoalsFor = homeGoalsFor;
-	}
+    public void setHomeMatchesLost(Integer homeMatchesLost) {
+        this.homeMatchesLost = homeMatchesLost;
+    }
 
-	public Integer getHomeGoalsAgainst() {
-		return homeGoalsAgainst;
-	}
+    public Integer getHomeGoalsFor() {
+        return homeGoalsFor;
+    }
 
-	public void setHomeGoalsAgainst(Integer homeGoalsAgainst) {
-		this.homeGoalsAgainst = homeGoalsAgainst;
-	}
+    public void setHomeGoalsFor(Integer homeGoalsFor) {
+        this.homeGoalsFor = homeGoalsFor;
+    }
 
-	public Integer getHomeGoalDifference() {
-		return homeGoalDifference;
-	}
+    public Integer getHomeGoalsAgainst() {
+        return homeGoalsAgainst;
+    }
 
-	public void setHomeGoalDifference(Integer homeGoalDifference) {
-		this.homeGoalDifference = homeGoalDifference;
-	}
+    public void setHomeGoalsAgainst(Integer homeGoalsAgainst) {
+        this.homeGoalsAgainst = homeGoalsAgainst;
+    }
 
-	public Integer getHomePoints() {
-		return homePoints;
-	}
+    public Integer getHomeGoalDifference() {
+        return homeGoalDifference;
+    }
 
-	public void setHomePoints(Integer homePoints) {
-		this.homePoints = homePoints;
-	}
+    public void setHomeGoalDifference(Integer homeGoalDifference) {
+        this.homeGoalDifference = homeGoalDifference;
+    }
 
-	public Integer getHomeRanking() {
-		return homeRanking;
-	}
+    public Integer getHomePoints() {
+        return homePoints;
+    }
 
-	public void setHomeRanking(Integer homeRanking) {
-		this.homeRanking = homeRanking;
-	}
+    public void setHomePoints(Integer homePoints) {
+        this.homePoints = homePoints;
+    }
 
-	public Integer getAwayMatchesPlayed() {
-		return awayMatchesPlayed;
-	}
+    public Integer getHomeRanking() {
+        return homeRanking;
+    }
 
-	public void setAwayMatchesPlayed(Integer awayMatchesPlayed) {
-		this.awayMatchesPlayed = awayMatchesPlayed;
-	}
+    public void setHomeRanking(Integer homeRanking) {
+        this.homeRanking = homeRanking;
+    }
 
-	public Integer getAwayMatchesWon() {
-		return awayMatchesWon;
-	}
+    public Integer getAwayMatchesPlayed() {
+        return awayMatchesPlayed;
+    }
 
-	public void setAwayMatchesWon(Integer awayMatchesWon) {
-		this.awayMatchesWon = awayMatchesWon;
-	}
+    public void setAwayMatchesPlayed(Integer awayMatchesPlayed) {
+        this.awayMatchesPlayed = awayMatchesPlayed;
+    }
 
-	public Integer getAwayMatchesDrawn() {
-		return awayMatchesDrawn;
-	}
+    public Integer getAwayMatchesWon() {
+        return awayMatchesWon;
+    }
 
-	public void setAwayMatchesDrawn(Integer awayMatchesDrawn) {
-		this.awayMatchesDrawn = awayMatchesDrawn;
-	}
+    public void setAwayMatchesWon(Integer awayMatchesWon) {
+        this.awayMatchesWon = awayMatchesWon;
+    }
 
-	public Integer getAwayMatchesLost() {
-		return awayMatchesLost;
-	}
+    public Integer getAwayMatchesDrawn() {
+        return awayMatchesDrawn;
+    }
 
-	public void setAwayMatchesLost(Integer awayMatchesLost) {
-		this.awayMatchesLost = awayMatchesLost;
-	}
+    public void setAwayMatchesDrawn(Integer awayMatchesDrawn) {
+        this.awayMatchesDrawn = awayMatchesDrawn;
+    }
 
-	public Integer getAwayGoalsFor() {
-		return awayGoalsFor;
-	}
+    public Integer getAwayMatchesLost() {
+        return awayMatchesLost;
+    }
 
-	public void setAwayGoalsFor(Integer awayGoalsFor) {
-		this.awayGoalsFor = awayGoalsFor;
-	}
+    public void setAwayMatchesLost(Integer awayMatchesLost) {
+        this.awayMatchesLost = awayMatchesLost;
+    }
 
-	public Integer getAwayGoalsAgainst() {
-		return awayGoalsAgainst;
-	}
+    public Integer getAwayGoalsFor() {
+        return awayGoalsFor;
+    }
 
-	public void setAwayGoalsAgainst(Integer awayGoalsAgainst) {
-		this.awayGoalsAgainst = awayGoalsAgainst;
-	}
+    public void setAwayGoalsFor(Integer awayGoalsFor) {
+        this.awayGoalsFor = awayGoalsFor;
+    }
 
-	public Integer getAwayGoalDifference() {
-		return awayGoalDifference;
-	}
+    public Integer getAwayGoalsAgainst() {
+        return awayGoalsAgainst;
+    }
 
-	public void setAwayGoalDifference(Integer awayGoalDifference) {
-		this.awayGoalDifference = awayGoalDifference;
-	}
+    public void setAwayGoalsAgainst(Integer awayGoalsAgainst) {
+        this.awayGoalsAgainst = awayGoalsAgainst;
+    }
 
-	public Integer getAwayPoints() {
-		return awayPoints;
-	}
+    public Integer getAwayGoalDifference() {
+        return awayGoalDifference;
+    }
 
-	public void setAwayPoints(Integer awayPoints) {
-		this.awayPoints = awayPoints;
-	}
+    public void setAwayGoalDifference(Integer awayGoalDifference) {
+        this.awayGoalDifference = awayGoalDifference;
+    }
 
-	public Integer getAwayRanking() {
-		return awayRanking;
-	}
+    public Integer getAwayPoints() {
+        return awayPoints;
+    }
 
-	public void setAwayRanking(Integer awayRanking) {
-		this.awayRanking = awayRanking;
-	}
+    public void setAwayPoints(Integer awayPoints) {
+        this.awayPoints = awayPoints;
+    }
 
-	public Integer getFormPoints() {
-		return formPoints;
-	}
+    public Integer getAwayRanking() {
+        return awayRanking;
+    }
 
-	public void setFormPoints(Integer formPoints) {
-		this.formPoints = formPoints;
-	}
+    public void setAwayRanking(Integer awayRanking) {
+        this.awayRanking = awayRanking;
+    }
 
-	public Integer getPreviousRanking() {
-		return previousRanking;
-	}
+    public Integer getFormPoints() {
+        return formPoints;
+    }
 
-	public void setPreviousRanking(Integer previousRanking) {
-		this.previousRanking = previousRanking;
-	}
-	
+    public void setFormPoints(Integer formPoints) {
+        this.formPoints = formPoints;
+    }
+
+    public Integer getPreviousRanking() {
+        return previousRanking;
+    }
+
+    public void setPreviousRanking(Integer previousRanking) {
+        this.previousRanking = previousRanking;
+    }
+
 }

@@ -5,14 +5,14 @@ import java.util.List;
 
 public class PremierLeagueDTO extends LeagueDTO {
 
-	private List<Long> matchDays = new ArrayList<Long>();
+    private List<Long> matchDays = new ArrayList<Long>();
 
-	public List<Long> getMatchDays() {
-		return matchDays;
-	}
+    public List<Long> getMatchDays() {
+        return matchDays;
+    }
 
-	public void setMatchDays(List<Long> matchDays) {
-		this.matchDays = matchDays;
-	}
-		
+    public void setMatchDays(List<Long> matchDays) {
+        this.matchDays = matchDays;
+    }
+
 }

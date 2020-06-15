@@ -6,37 +6,37 @@ public class SubstitutionDTO extends MatchEventDTO {
     private String playerInName;
     private String playerInLastName;
     private String playerInShortName;
-	
+
     public int getPlayerInId() {
-		return playerInId;
-	}
-	
+        return playerInId;
+    }
+
     public void setPlayerInId(int playerInId) {
-		this.playerInId = playerInId;
-	}
-	
+        this.playerInId = playerInId;
+    }
+
     public String getPlayerInName() {
-		return playerInName;
-	}
-	
+        return playerInName;
+    }
+
     public void setPlayerInName(String playerInName) {
-		this.playerInName = playerInName;
-	}
-    
-	public String getPlayerInLastName() {
-		return playerInLastName;
-	}
+        this.playerInName = playerInName;
+    }
 
-	public void setPlayerInLastName(String playerInLastName) {
-		this.playerInLastName = playerInLastName;
-	}
+    public String getPlayerInLastName() {
+        return playerInLastName;
+    }
 
-	public String getPlayerInShortName() {
-		return playerInShortName;
-	}
+    public void setPlayerInLastName(String playerInLastName) {
+        this.playerInLastName = playerInLastName;
+    }
 
-	public void setPlayerInShortName(String playerInShortName) {
-		this.playerInShortName = playerInShortName;
-	}	
-        
+    public String getPlayerInShortName() {
+        return playerInShortName;
+    }
+
+    public void setPlayerInShortName(String playerInShortName) {
+        this.playerInShortName = playerInShortName;
+    }
+
 }
