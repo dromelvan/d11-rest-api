@@ -74,5 +74,6 @@ public interface Endpoint {
     public final static String TEAM_TABLE_STATS = INDEX + "team-table-stats";
     public final static String TEAM_TABLE_STATS_IDS = TEAM_TABLE_STATS + "/ids";
     public final static String TEAM_TABLE_STAT = TEAM_TABLE_STATS + "/{id}";
+    public final static String TEAM_TABLE_STAT_BY_MATCH_DAY_ID = TEAM_TABLE_STATS + "/match-day/{id}";
 
 }
