@@ -5,6 +5,7 @@ public class LeagueDTO extends D11RestApiDTO {
     private String name;
     private int seasonId;
     private String seasonName;
+    private String seasonStatus;
 
     public String getName() {
         return name;
@@ -28,6 +29,14 @@ public class LeagueDTO extends D11RestApiDTO {
 
     public void setSeasonName(String seasonName) {
         this.seasonName = seasonName;
+    }
+
+    public String getSeasonStatus() {
+        return seasonStatus;
+    }
+
+    public void setSeasonStatus(String seasonStatus) {
+        this.seasonStatus = seasonStatus;
     }
 
 }
