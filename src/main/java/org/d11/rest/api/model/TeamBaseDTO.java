@@ -1,11 +1,10 @@
 package org.d11.rest.api.model;
 
-public class D11TeamNameDTO extends D11RestApiDTO {
+public class TeamBaseDTO extends D11RestApiDTO {
 
     private String name;
     private String shortName;
     private String code;
-    private boolean dummy;
 
     public String getName() {
         return name;
@@ -29,14 +28,6 @@ public class D11TeamNameDTO extends D11RestApiDTO {
 
     public void setCode(String code) {
         this.code = code;
-    }
-
-    public boolean isDummy() {
-        return dummy;
-    }
-
-    public void setDummy(boolean dummy) {
-        this.dummy = dummy;
     }
 
 }

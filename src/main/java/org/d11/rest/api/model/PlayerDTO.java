@@ -2,7 +2,7 @@ package org.d11.rest.api.model;
 
 import java.time.LocalDate;
 
-public class PlayerDTO extends PlayerNameDTO {
+public class PlayerDTO extends PlayerBaseDTO {
 
     private int countryId;
     private String countryName;

@@ -1,6 +1,6 @@
 package org.d11.rest.api.model;
 
-public class D11TeamDTO extends D11TeamNameDTO {
+public class D11TeamDTO extends D11TeamBaseDTO {
 
     private int ownerId;
     private String ownerName;

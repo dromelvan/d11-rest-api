@@ -71,6 +71,11 @@ public interface Endpoint {
     public final static String D11_LEAGUE = D11_LEAGUES + "/{id}";
     public final static String D11_LEAGUE_CURRENT = D11_LEAGUES + "/current";
 
+    public final static String D11_MATCH_DAYS = INDEX + "d11-match-days";
+    public final static String D11_MATCH_DAYS_IDS = D11_MATCH_DAYS + "/ids";
+    public final static String D11_MATCH_DAY = D11_MATCH_DAYS + "/{id}";
+    public final static String D11_MATCH_DAY_CURRENT = D11_MATCH_DAYS + "/current";
+
     public final static String TEAM_TABLE_STATS = INDEX + "team-table-stats";
     public final static String TEAM_TABLE_STATS_IDS = TEAM_TABLE_STATS + "/ids";
     public final static String TEAM_TABLE_STAT = TEAM_TABLE_STATS + "/{id}";

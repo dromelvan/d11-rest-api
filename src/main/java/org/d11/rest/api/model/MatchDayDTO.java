@@ -5,15 +5,13 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MatchDayDTO extends D11RestApiDTO {
+public class MatchDayDTO extends MatchDayBaseDTO {
 
     private int seasonId;
     private String seasonName;
     private int premierLeagueId;
     private String premierLeagueName;
-    private LocalDate date;
-    private int matchDayNumber;
-    private Status status = Status.PENDING;
+    private D11MatchDayBaseDTO d11MatchDay;
     private Map<LocalDate, List<Long>> matches = new LinkedHashMap<>();
 
     public int getSeasonId() {
@@ -48,28 +46,12 @@ public class MatchDayDTO extends D11RestApiDTO {
         this.premierLeagueName = premierLeagueName;
     }
 
-    public LocalDate getDate() {
-        return date;
+    public D11MatchDayBaseDTO getD11MatchDay() {
+        return d11MatchDay;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    public int getMatchDayNumber() {
-        return matchDayNumber;
-    }
-
-    public void setMatchDayNumber(int matchDayNumber) {
-        this.matchDayNumber = matchDayNumber;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
+    public void setD11MatchDay(D11MatchDayBaseDTO d11MatchDay) {
+        this.d11MatchDay = d11MatchDay;
     }
 
     public Map<LocalDate, List<Long>> getMatches() {

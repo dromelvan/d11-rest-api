@@ -2,32 +2,32 @@ package org.d11.rest.api.model;
 
 public class PlayerMatchStatDetailsDTO extends PlayerMatchStatDTO {
 
-    private PlayerNameDTO playerNameDTO;
-    private TeamNameDTO teamNameDTO;
-    private D11TeamNameDTO d11TeamNameDTO;
+    private PlayerBaseDTO playerNameDTO;
+    private TeamBaseDTO teamNameDTO;
+    private D11TeamBaseDTO d11TeamNameDTO;
     private PositionDTO positionDTO;
 
-    public PlayerNameDTO getPlayer() {
+    public PlayerBaseDTO getPlayer() {
         return playerNameDTO;
     }
 
-    public void setPlayer(PlayerNameDTO playerNameDTO) {
+    public void setPlayer(PlayerBaseDTO playerNameDTO) {
         this.playerNameDTO = playerNameDTO;
     }
 
-    public TeamNameDTO getTeam() {
+    public TeamBaseDTO getTeam() {
         return teamNameDTO;
     }
 
-    public void setTeam(TeamNameDTO teamNameDTO) {
+    public void setTeam(TeamBaseDTO teamNameDTO) {
         this.teamNameDTO = teamNameDTO;
     }
 
-    public D11TeamNameDTO getD11Team() {
+    public D11TeamBaseDTO getD11Team() {
         return d11TeamNameDTO;
     }
 
-    public void setD11Team(D11TeamNameDTO d11TeamNameDTO) {
+    public void setD11Team(D11TeamBaseDTO d11TeamNameDTO) {
         this.d11TeamNameDTO = d11TeamNameDTO;
     }
 

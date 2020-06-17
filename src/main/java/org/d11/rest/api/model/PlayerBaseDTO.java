@@ -1,6 +1,6 @@
 package org.d11.rest.api.model;
 
-public class PlayerNameDTO extends D11RestApiDTO {
+public class PlayerBaseDTO extends D11RestApiDTO {
 
     private String firstName;
     private String lastName;
