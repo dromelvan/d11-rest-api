@@ -7,43 +7,25 @@ import java.util.Map;
 
 public class MatchDayDTO extends MatchDayBaseDTO {
 
-    private int seasonId;
-    private String seasonName;
-    private int premierLeagueId;
-    private String premierLeagueName;
+    private SeasonBaseDTO season;
+    private LeagueBaseDTO premierLeague;
     private D11MatchDayBaseDTO d11MatchDay;
     private Map<LocalDate, List<Long>> matches = new LinkedHashMap<>();
 
-    public int getSeasonId() {
-        return seasonId;
+    public SeasonBaseDTO getSeason() {
+        return season;
     }
 
-    public void setSeasonId(int seasonId) {
-        this.seasonId = seasonId;
+    public void setSeason(SeasonBaseDTO season) {
+        this.season = season;
     }
 
-    public String getSeasonName() {
-        return seasonName;
+    public LeagueBaseDTO getPremierLeague() {
+        return premierLeague;
     }
 
-    public void setSeasonName(String seasonName) {
-        this.seasonName = seasonName;
-    }
-
-    public int getPremierLeagueId() {
-        return premierLeagueId;
-    }
-
-    public void setPremierLeagueId(int premierLeagueId) {
-        this.premierLeagueId = premierLeagueId;
-    }
-
-    public String getPremierLeagueName() {
-        return premierLeagueName;
-    }
-
-    public void setPremierLeagueName(String premierLeagueName) {
-        this.premierLeagueName = premierLeagueName;
+    public void setPremierLeague(LeagueBaseDTO premierLeague) {
+        this.premierLeague = premierLeague;
     }
 
     public D11MatchDayBaseDTO getD11MatchDay() {

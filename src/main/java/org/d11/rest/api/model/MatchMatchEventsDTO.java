@@ -9,19 +9,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class MatchMatchEventsDTO extends MatchDTO {
 
-    // private Map<?,?> playerMatchStats = new HashMap<>();
     private List<GoalDTO> goals = new ArrayList<>();
     private List<CardDTO> cards = new ArrayList<>();
     private List<SubstitutionDTO> substitutions = new ArrayList<>();
-    private Map<Integer, MatchEventsDTO> matchEvents = new HashMap<>();
-
-//	public Map<?,?> getPlayerMatchStats() {
-//		return playerMatchStats;
-//	}
-//
-//	public void setPlayerMatchStats(Map<?,?> playerMatchStats) {
-//		this.playerMatchStats = playerMatchStats;
-//	}
 
     @JsonIgnore
     public List<GoalDTO> getGoals() {
@@ -50,16 +40,16 @@ public class MatchMatchEventsDTO extends MatchDTO {
         this.substitutions = substitutions;
     }
 
-    public Map<Integer, MatchEventsDTO> getMatchEvents() {
-        this.matchEvents = new HashMap<Integer, MatchEventsDTO>();
-        this.matchEvents.put(getHomeTeamId(), new MatchEventsDTO());
-        this.matchEvents.put(getAwayTeamId(), new MatchEventsDTO());
+    public Map<Long, MatchEventsDTO> getMatchEvents() {
+        Map<Long, MatchEventsDTO> matchEvents = new HashMap<>();
+        matchEvents.put(getHomeTeam().getId(), new MatchEventsDTO());
+        matchEvents.put(getAwayTeam().getId(), new MatchEventsDTO());
 
-        getGoals().forEach(goalDTO -> this.matchEvents.get(goalDTO.getTeamId()).getGoals().add(goalDTO));
-        getCards().forEach(cardDTO -> this.matchEvents.get(cardDTO.getTeamId()).getCards().add(cardDTO));
-        getSubstitutions().forEach(substitutionDTO -> this.matchEvents.get(substitutionDTO.getTeamId()).getSubstitutions().add(substitutionDTO));
+        getGoals().forEach(goalDTO -> matchEvents.get((long) goalDTO.getTeam().getId()).getGoals().add(goalDTO));
+        getCards().forEach(cardDTO -> matchEvents.get((long) cardDTO.getTeam().getId()).getCards().add(cardDTO));
+        getSubstitutions().forEach(substitutionDTO -> matchEvents.get((long) substitutionDTO.getTeam().getId()).getSubstitutions().add(substitutionDTO));
 
-        return this.matchEvents;
+        return matchEvents;
     }
 
 }
