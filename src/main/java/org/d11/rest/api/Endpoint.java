@@ -76,6 +76,10 @@ public interface Endpoint {
     public final static String D11_MATCH_DAY = D11_MATCH_DAYS + "/{id}";
     public final static String D11_MATCH_DAY_CURRENT = D11_MATCH_DAYS + "/current";
 
+    public final static String D11_MATCHES = INDEX + "d11-matches";
+    public final static String D11_MATCHES_IDS = D11_MATCHES + "/ids";
+    public final static String D11_MATCH = D11_MATCHES + "/{id}";
+
     public final static String TEAM_TABLE_STATS = INDEX + "team-table-stats";
     public final static String TEAM_TABLE_STATS_IDS = TEAM_TABLE_STATS + "/ids";
     public final static String TEAM_TABLE_STAT = TEAM_TABLE_STATS + "/{id}";
