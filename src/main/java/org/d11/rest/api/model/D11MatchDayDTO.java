@@ -4,9 +4,18 @@ import java.util.*;
 
 public class D11MatchDayDTO extends D11MatchDayBaseDTO {
 
+    private SeasonBaseDTO season;
     private LeagueBaseDTO d11League;
     private MatchDayBaseDTO matchDay;
     private List<Long> d11Matches = new ArrayList<>();
+
+    public SeasonBaseDTO getSeason() {
+        return season;
+    }
+
+    public void setSeason(SeasonBaseDTO season) {
+        this.season = season;
+    }
 
     public LeagueBaseDTO getD11League() {
         return d11League;
