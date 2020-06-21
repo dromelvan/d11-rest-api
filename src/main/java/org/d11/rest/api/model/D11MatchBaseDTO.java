@@ -1,5 +1,7 @@
 package org.d11.rest.api.model;
 
+import java.time.LocalDate;
+
 public class D11MatchBaseDTO extends D11RestApiDTO {
 
     private Integer homeTeamGoals;
@@ -10,6 +12,7 @@ public class D11MatchBaseDTO extends D11RestApiDTO {
     private Integer previousAwayTeamGoals;
     private Integer previousHomeTeamPoints;
     private Integer previousAwayTeamPoints;
+    private LocalDate date;
     private String elapsed;
     private Status status = Status.PENDING;
 
@@ -75,6 +78,14 @@ public class D11MatchBaseDTO extends D11RestApiDTO {
 
     public void setPreviousAwayTeamPoints(Integer previousAwayTeamPoints) {
         this.previousAwayTeamPoints = previousAwayTeamPoints;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public String getElapsed() {
