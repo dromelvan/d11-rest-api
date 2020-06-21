@@ -1,5 +1,6 @@
 package org.d11.rest.api.model;
 
+import java.time.LocalDate;
 import java.util.*;
 
 public class D11MatchDayDTO extends D11MatchDayBaseDTO {
@@ -7,7 +8,7 @@ public class D11MatchDayDTO extends D11MatchDayBaseDTO {
     private SeasonBaseDTO season;
     private LeagueBaseDTO d11League;
     private MatchDayBaseDTO matchDay;
-    private List<Long> d11Matches = new ArrayList<>();
+    private Map<LocalDate, List<Long>> d11Matches = new LinkedHashMap<>();
 
     public SeasonBaseDTO getSeason() {
         return season;
@@ -33,11 +34,11 @@ public class D11MatchDayDTO extends D11MatchDayBaseDTO {
         this.matchDay = matchDay;
     }
 
-    public List<Long> getD11Matches() {
+    public Map<LocalDate, List<Long>> getD11Matches() {
         return d11Matches;
     }
 
-    public void setD11Matches(List<Long> d11Matches) {
+    public void setD11Matches(Map<LocalDate, List<Long>> d11Matches) {
         this.d11Matches = d11Matches;
     }
 
