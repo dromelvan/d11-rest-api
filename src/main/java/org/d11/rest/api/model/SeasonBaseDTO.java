@@ -5,6 +5,7 @@ import java.time.LocalDate;
 public class SeasonBaseDTO extends D11RestApiDTO {
 
     private String name;
+    private String shortName;
     private Status status = Status.PENDING;
     private LocalDate date;
 
@@ -14,6 +15,14 @@ public class SeasonBaseDTO extends D11RestApiDTO {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getShortName() {
+        return shortName;
+    }
+
+    public void setShortName(String shortName) {
+        this.shortName = shortName;
     }
 
     public Status getStatus() {
