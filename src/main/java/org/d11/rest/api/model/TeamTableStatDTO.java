@@ -2,14 +2,14 @@ package org.d11.rest.api.model;
 
 public class TeamTableStatDTO extends TableStatDTO {
 
-    private TeamBaseDTO teamNameDTO;
+    private TeamBaseDTO team;
 
     public TeamBaseDTO getTeam() {
-        return teamNameDTO;
+        return team;
     }
 
-    public void setTeam(TeamBaseDTO teamNameDTO) {
-        this.teamNameDTO = teamNameDTO;
+    public void setTeam(TeamBaseDTO team) {
+        this.team = team;
     }
 
 }

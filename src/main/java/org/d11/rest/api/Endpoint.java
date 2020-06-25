@@ -85,4 +85,9 @@ public interface Endpoint {
     public final static String TEAM_TABLE_STAT = TEAM_TABLE_STATS + "/{id}";
     public final static String TEAM_TABLE_STAT_BY_MATCH_DAY_ID = TEAM_TABLE_STATS + "/match-day/{id}";
 
+    public final static String D11_TEAM_TABLE_STATS = INDEX + "d11-team-table-stats";
+    public final static String D11_TEAM_TABLE_STATS_IDS = D11_TEAM_TABLE_STATS + "/ids";
+    public final static String D11_TEAM_TABLE_STAT = D11_TEAM_TABLE_STATS + "/{id}";
+    public final static String D11_TEAM_TABLE_STAT_BY_D11_MATCH_DAY_ID = D11_TEAM_TABLE_STATS + "/d11-match-day/{id}";
+    
 }
