@@ -53,6 +53,7 @@ public interface Endpoint {
     public final static String PLAYER_MATCH_STATS = INDEX + "player-match-stats";
     public final static String PLAYER_MATCH_STATS_IDS = PLAYER_MATCH_STATS + "/ids";
     public final static String PLAYER_MATCH_STAT = PLAYER_MATCH_STATS + "/{id}";
+    public final static String PLAYER_MATCH_STAT_BY_D11_MATCH_ID = PLAYER_MATCH_STATS + "/d11-match/{id}";
 
     public final static String GOALS = INDEX + "goals";
     public final static String GOALS_IDS = GOALS + "/ids";
