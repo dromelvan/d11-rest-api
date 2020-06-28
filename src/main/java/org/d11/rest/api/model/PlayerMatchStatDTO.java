@@ -1,78 +1,42 @@
 package org.d11.rest.api.model;
 
-public class PlayerMatchStatDTO extends PlayerStatDTO {
+public class PlayerMatchStatDTO extends PlayerMatchStatBaseDTO {
 
-    private String playedPosition;
-    private int lineup;
-    private int substitutionOnTime;
-    private int substitutionOffTime;
-    private int yellowCardTime;
-    private int redCardTime;
-    private boolean manOfTheMatch;
-    private boolean sharedManOfTheMatch;
+    private PlayerBaseDTO playerNameDTO;
+    private TeamBaseDTO teamNameDTO;
+    private D11TeamBaseDTO d11TeamNameDTO;
+    private PositionDTO positionDTO;
 
-    public String getPlayedPosition() {
-        return playedPosition;
+    public PlayerBaseDTO getPlayer() {
+        return playerNameDTO;
     }
 
-    public void setPlayedPosition(String playedPosition) {
-        this.playedPosition = playedPosition;
+    public void setPlayer(PlayerBaseDTO playerNameDTO) {
+        this.playerNameDTO = playerNameDTO;
     }
 
-    public int getLineup() {
-        return lineup;
+    public TeamBaseDTO getTeam() {
+        return teamNameDTO;
     }
 
-    public void setLineup(int lineup) {
-        this.lineup = lineup;
+    public void setTeam(TeamBaseDTO teamNameDTO) {
+        this.teamNameDTO = teamNameDTO;
     }
 
-    public int getSubstitutionOnTime() {
-        return substitutionOnTime;
+    public D11TeamBaseDTO getD11Team() {
+        return d11TeamNameDTO;
     }
 
-    public void setSubstitutionOnTime(int substitutionOnTime) {
-        this.substitutionOnTime = substitutionOnTime;
+    public void setD11Team(D11TeamBaseDTO d11TeamNameDTO) {
+        this.d11TeamNameDTO = d11TeamNameDTO;
     }
 
-    public int getSubstitutionOffTime() {
-        return substitutionOffTime;
+    public PositionDTO getPosition() {
+        return positionDTO;
     }
 
-    public void setSubstitutionOffTime(int substitutionOffTime) {
-        this.substitutionOffTime = substitutionOffTime;
-    }
-
-    public int getYellowCardTime() {
-        return yellowCardTime;
-    }
-
-    public void setYellowCardTime(int yellowCardTime) {
-        this.yellowCardTime = yellowCardTime;
-    }
-
-    public int getRedCardTime() {
-        return redCardTime;
-    }
-
-    public void setRedCardTime(int redCardTime) {
-        this.redCardTime = redCardTime;
-    }
-
-    public boolean isManOfTheMatch() {
-        return manOfTheMatch;
-    }
-
-    public void setManOfTheMatch(boolean manOfTheMatch) {
-        this.manOfTheMatch = manOfTheMatch;
-    }
-
-    public boolean isSharedManOfTheMatch() {
-        return sharedManOfTheMatch;
-    }
-
-    public void setSharedManOfTheMatch(boolean sharedManOfTheMatch) {
-        this.sharedManOfTheMatch = sharedManOfTheMatch;
+    public void setPosition(PositionDTO positionDTO) {
+        this.positionDTO = positionDTO;
     }
 
 }
