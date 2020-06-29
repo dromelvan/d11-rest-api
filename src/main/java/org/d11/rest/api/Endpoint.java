@@ -48,11 +48,11 @@ public interface Endpoint {
     public final static String MATCHES_IDS = MATCHES + "/ids";
     public final static String MATCH = MATCHES + "/{id}";
     public final static String MATCH_EVENTS = MATCHES + "/{id}/events";
-    public final static String MATCH_STATS = MATCHES + "/{id}/stats";
 
     public final static String PLAYER_MATCH_STATS = INDEX + "player-match-stats";
     public final static String PLAYER_MATCH_STATS_IDS = PLAYER_MATCH_STATS + "/ids";
     public final static String PLAYER_MATCH_STAT = PLAYER_MATCH_STATS + "/{id}";
+    public final static String PLAYER_MATCH_STAT_BY_MATCH_ID = PLAYER_MATCH_STATS + "/match/{id}";
     public final static String PLAYER_MATCH_STAT_BY_D11_MATCH_ID = PLAYER_MATCH_STATS + "/d11-match/{id}";
 
     public final static String GOALS = INDEX + "goals";
