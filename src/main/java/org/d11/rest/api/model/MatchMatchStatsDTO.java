@@ -1,14 +1,16 @@
 package org.d11.rest.api.model;
 
+import org.d11.rest.api.collection.MatchPlayerMatchStatsDTO;
+
 public class MatchMatchStatsDTO extends MatchMatchEventsDTO {
 
-    private PlayerMatchStatsByTeamIdPositionDTO playerMatchStats;
+    private MatchPlayerMatchStatsDTO playerMatchStats;
 
-    public PlayerMatchStatsByTeamIdPositionDTO getPlayerMatchStats() {
+    public MatchPlayerMatchStatsDTO getPlayerMatchStats() {
         return playerMatchStats;
     }
 
-    public void setPlayerMatchStats(PlayerMatchStatsByTeamIdPositionDTO playerMatchStats) {
+    public void setPlayerMatchStats(MatchPlayerMatchStatsDTO playerMatchStats) {
         this.playerMatchStats = playerMatchStats;
     }
 
