@@ -2,41 +2,50 @@ package org.d11.rest.api.model;
 
 public class PlayerMatchStatDTO extends PlayerMatchStatBaseDTO {
 
-    private PlayerBaseDTO playerNameDTO;
-    private TeamBaseDTO teamNameDTO;
-    private D11TeamBaseDTO d11TeamNameDTO;
-    private PositionDTO positionDTO;
-
+    private MatchBaseDTO match;
+    private PlayerBaseDTO player;
+    private TeamBaseDTO team;
+    private D11TeamBaseDTO d11Team;
+    private PositionDTO position;
+    
+    public MatchBaseDTO getMatch() {
+        return match;
+    }
+    
+    public void setMatch(MatchBaseDTO match) {
+        this.match = match;
+    }
+    
     public PlayerBaseDTO getPlayer() {
-        return playerNameDTO;
+        return player;
     }
-
-    public void setPlayer(PlayerBaseDTO playerNameDTO) {
-        this.playerNameDTO = playerNameDTO;
+    
+    public void setPlayer(PlayerBaseDTO player) {
+        this.player = player;
     }
-
+    
     public TeamBaseDTO getTeam() {
-        return teamNameDTO;
+        return team;
     }
-
-    public void setTeam(TeamBaseDTO teamNameDTO) {
-        this.teamNameDTO = teamNameDTO;
+    
+    public void setTeam(TeamBaseDTO team) {
+        this.team = team;
     }
-
+    
     public D11TeamBaseDTO getD11Team() {
-        return d11TeamNameDTO;
+        return d11Team;
     }
-
-    public void setD11Team(D11TeamBaseDTO d11TeamNameDTO) {
-        this.d11TeamNameDTO = d11TeamNameDTO;
+    
+    public void setD11Team(D11TeamBaseDTO d11Team) {
+        this.d11Team = d11Team;
     }
-
+    
     public PositionDTO getPosition() {
-        return positionDTO;
+        return position;
     }
-
-    public void setPosition(PositionDTO positionDTO) {
-        this.positionDTO = positionDTO;
+    
+    public void setPosition(PositionDTO position) {
+        this.position = position;
     }
-
+    
 }
