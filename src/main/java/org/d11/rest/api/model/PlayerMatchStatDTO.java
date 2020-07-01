@@ -2,17 +2,17 @@ package org.d11.rest.api.model;
 
 public class PlayerMatchStatDTO extends PlayerMatchStatBaseDTO {
 
-    private MatchBaseDTO match;
+    private MatchDTO match;
     private PlayerBaseDTO player;
     private TeamBaseDTO team;
     private D11TeamBaseDTO d11Team;
     private PositionDTO position;
     
-    public MatchBaseDTO getMatch() {
+    public MatchDTO getMatch() {
         return match;
     }
     
-    public void setMatch(MatchBaseDTO match) {
+    public void setMatch(MatchDTO match) {
         this.match = match;
     }
     
