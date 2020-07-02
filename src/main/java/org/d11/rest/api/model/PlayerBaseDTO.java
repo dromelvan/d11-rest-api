@@ -1,25 +1,12 @@
 package org.d11.rest.api.model;
 
+import lombok.Data;
+
+@Data
 public class PlayerBaseDTO extends D11RestApiDTO {
 
     private String firstName;
     private String lastName;
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     public String getName() {
         return (getFirstName() + " " + getLastName()).trim();

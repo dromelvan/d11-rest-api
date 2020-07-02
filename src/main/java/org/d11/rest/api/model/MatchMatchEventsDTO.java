@@ -1,16 +1,18 @@
 package org.d11.rest.api.model;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.Setter;
+
 public class MatchMatchEventsDTO extends MatchDTO {
 
+    @Setter
     private List<GoalDTO> goals = new ArrayList<>();
+    @Setter
     private List<CardDTO> cards = new ArrayList<>();
+    @Setter
     private List<SubstitutionDTO> substitutions = new ArrayList<>();
 
     @JsonIgnore
@@ -18,26 +20,14 @@ public class MatchMatchEventsDTO extends MatchDTO {
         return goals;
     }
 
-    public void setGoals(List<GoalDTO> goals) {
-        this.goals = goals;
-    }
-
     @JsonIgnore
     public List<CardDTO> getCards() {
         return cards;
     }
 
-    public void setCards(List<CardDTO> cards) {
-        this.cards = cards;
-    }
-
     @JsonIgnore
     public List<SubstitutionDTO> getSubstitutions() {
         return substitutions;
-    }
-
-    public void setSubstitutions(List<SubstitutionDTO> substitutions) {
-        this.substitutions = substitutions;
     }
 
     public Map<Long, MatchEventsDTO> getMatchEvents() {
