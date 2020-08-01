@@ -4,6 +4,7 @@ public interface Endpoint {
 
     public final static String INDEX = "/";
     public final static String AUTHENTICATE = INDEX + "authenticate";
+    public final static String SEARCH = INDEX + "search/{search}";
 
     public final static String COUNTRIES = INDEX + "countries";
     public final static String COUNTRIES_IDS = COUNTRIES + "/ids";
