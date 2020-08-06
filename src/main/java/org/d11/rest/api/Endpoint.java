@@ -14,6 +14,10 @@ public interface Endpoint {
     public final static String PLAYERS_IDS = PLAYERS + "/ids";
     public final static String PLAYER = PLAYERS + "/{id}";
 
+    public final static String PLAYER_SEASON_INFOS = INDEX + "player-season-infos";
+    public final static String PLAYER_SEASON_INFOS_IDS = PLAYER_SEASON_INFOS + "/ids";
+    public final static String PLAYER_SEASON_INFO = PLAYER_SEASON_INFOS + "/{id}";
+    
     public final static String POSITIONS = INDEX + "positions";
     public final static String POSITIONS_IDS = POSITIONS + "/ids";
     public final static String POSITION = POSITIONS + "/{id}";
