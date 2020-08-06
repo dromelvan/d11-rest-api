@@ -7,6 +7,6 @@ import lombok.Data;
 @Data
 public class SearchResultDTO {
 
-    private List<PlayerBaseDTO> players = new ArrayList<PlayerBaseDTO>();
+    private List<PlayerSearchResultDTO> players = new ArrayList<PlayerSearchResultDTO>();
     
 }
