@@ -17,10 +17,12 @@ public interface Endpoint {
     public final static String PLAYER_SEASON_INFOS = INDEX + "player-season-infos";
     public final static String PLAYER_SEASON_INFOS_IDS = PLAYER_SEASON_INFOS + "/ids";
     public final static String PLAYER_SEASON_INFO = PLAYER_SEASON_INFOS + "/{id}";
+    public final static String PLAYER_SEASON_INFO_BY_PLAYER_ID_AND_SEASON_ID = PLAYER_SEASON_INFOS + "/{playerId}/{seasonId}";
 
     public final static String PLAYER_SEASON_STATS = INDEX + "player-season-stats";
     public final static String PLAYER_SEASON_STATS_IDS = PLAYER_SEASON_STATS + "/ids";
     public final static String PLAYER_SEASON_STAT = PLAYER_SEASON_STATS + "/{id}";
+    public final static String PLAYER_SEASON_STAT_BY_PLAYER_ID_AND_SEASON_ID = PLAYER_SEASON_STATS + "/{playerId}/{seasonId}";
     
     public final static String POSITIONS = INDEX + "positions";
     public final static String POSITIONS_IDS = POSITIONS + "/ids";
