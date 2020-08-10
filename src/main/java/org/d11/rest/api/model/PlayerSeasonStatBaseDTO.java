@@ -20,4 +20,8 @@ public class PlayerSeasonStatBaseDTO extends PlayerStatDTO {
     private int pointsPerAppearance;
     private int ranking;
     
+    public boolean isActive() {
+        return getGamesStarted() + getGamesSubstitute() + getGamesDidNotParticipate() > 0;
+    }
+    
 }
