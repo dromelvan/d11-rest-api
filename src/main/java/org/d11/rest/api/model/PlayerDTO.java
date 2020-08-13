@@ -7,8 +7,7 @@ import lombok.Data;
 @Data
 public class PlayerDTO extends PlayerBaseDTO {
 
-    private int countryId;
-    private String countryName;
+    private CountryDTO country;
     private int whoScoredId;
     private LocalDate dateOfBirth;
     private int height;
