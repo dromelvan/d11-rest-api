@@ -65,6 +65,7 @@ public interface Endpoint {
     public final static String PLAYER_MATCH_STAT = PLAYER_MATCH_STATS + "/{id}";
     public final static String PLAYER_MATCH_STAT_BY_MATCH_ID = PLAYER_MATCH_STATS + "/match/{id}";
     public final static String PLAYER_MATCH_STAT_BY_D11_MATCH_ID = PLAYER_MATCH_STATS + "/d11-match/{id}";
+    public final static String PLAYER_MATCH_STAT_BY_PLAYER_ID_AND_SEASON_ID = PLAYER_MATCH_STATS + "/player/{playerId}/season/{seasonId}";
 
     public final static String GOALS = INDEX + "goals";
     public final static String GOALS_IDS = GOALS + "/ids";
